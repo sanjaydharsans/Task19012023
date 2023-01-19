@@ -1,0 +1,49 @@
+Q1)
+Higher-Order Functions: In javascript function can be assigned variables in the same way that strings or arrays can.They can be passed into other functions 
+as parameters. Higher order function is a function that accepts functions as parameters or returns a function.
+
+Map,Filter,reduce and forEach are examples of built-in higher-order functions.
+
+Q2)
+1. .map() Method: It executes a callback function on each element in an array.Returns a new array made up of the return values from the callback function.Original array does not get altered and returned array may contain different elements than the original array.
+
+Example: 
+let arr = [1,2,3,4,5,6];
+let loc = arr.map((item) => item*2);
+console.log(loc);
+
+
+2. .filter() Method: Executes a callback function on each element in an array.Callback function on each of the element must return either true or false.The returned array is the new array.
+
+Example:
+
+const number = [1,2,3,4,5,6];
+const fil = Number.filter(n => {  
+return n > 2;
+});
+
+
+3. reduce() Method: Iterates through an array and returns a single value.
+
+Example:
+
+let alpha = [5,6,60,20];
+
+let sum = alpha.reduce((accumulator, currentValue) => {  
+  return accumulator + currentValue;
+});
+
+console.log(sum);
+
+4. foreach() Method: Executes a callback function on each of the elements in an array in order.
+
+Example:
+
+const num = [26,18,1,6];
+num.forEach(num => {  
+  console.log(num);
+}); 
+
+
+
+
